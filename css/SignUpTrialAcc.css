@@ -1,0 +1,158 @@
+.sign-up {
+  background-color: var(--sub-background);
+  display: flex;
+  padding: 12rem 5rem 0.75rem;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+}
+
+.text-red {
+  color: var(--primary--800);
+}
+
+.sign-up-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.sign-up-title {
+  font-size: 32px;
+  margin-top: 0;
+}
+
+.heading-4 {
+  text-align: center;
+}
+
+.sub-title {
+  color: var(--text--white-bg--title);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Sf Pro Display, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.form-signup {
+  background-color: var(--background);
+  width: 44.875rem;
+  border: 1px solid var(--stroke);
+  border-radius: 2rem;
+  min-height: 58.75rem;
+  position: relative;
+  padding: 32px;
+}
+
+.input-fullWidth {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  color: var(--text--white-bg--title);
+  background-color: #fff;
+  border: 1px solid #e4e4e4;
+  border-radius: 9px;
+  flex: 0 auto;
+  justify-content: flex-start;
+  align-self: auto;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  padding: 0.90625rem 1rem;
+  display: flex;
+  box-shadow: inset 0 1px 2px #0000001a;
+}
+
+/* Modal styles */
+.no-scroll {
+  overflow: hidden;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal.show-modal {
+  display: flex;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 450px;
+  width: 90%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-icon img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+}
+
+.modal-content h2 {
+  color: #2d3436;
+  margin-bottom: 0.5rem;
+}
+
+.modal-content p {
+  color: #636e72;
+}
+
+.home-button {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: var(--primary--brand);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-button a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.auto-close {
+  margin-top: 1rem;
+  color: #b2bec3;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--primary--brand);
+}
+
+@media only screen and (max-width: 768px) {
+  .sign-up {
+    padding-top: 10rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+  }
+  .sign-up-title {
+    font-size: 30px;
+  }
+
+  .form-signup {
+    width: unset;
+    height: fit-content;
+  }
+}
+
