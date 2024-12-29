@@ -1,44 +1,44 @@
-$(document).ready(function () {
-  function enableHorizontalScrollOnVerticalScroll(selector) {
-    const scrollContainer = document.querySelector(`${selector} .flex-block-5`);
-    const section = document.querySelector(selector);
+// $(document).ready(function () {
+//   function enableHorizontalScrollOnVerticalScroll(selector) {
+//     const scrollContainer = document.querySelector(`${selector} .flex-block-5`);
+//     const section = document.querySelector(selector);
 
-    if (!scrollContainer || !section) return;
+//     if (!scrollContainer || !section) return;
 
-    // Calculate maximum scroll width and height once
-    const maxScrollX = scrollContainer.scrollWidth - scrollContainer.parentElement.clientWidth;
+//     // Calculate maximum scroll width and height once
+//     const maxScrollX = scrollContainer.scrollWidth - scrollContainer.parentElement.clientWidth;
 
-    // Add scroll event listener
-    window.addEventListener("scroll", () => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.offsetHeight;
-      const viewportHeight = window.innerHeight;
+//     // Add scroll event listener
+//     window.addEventListener("scroll", () => {
+//       const sectionTop = section.offsetTop;
+//       const sectionHeight = section.offsetHeight;
+//       const viewportHeight = window.innerHeight;
 
-      if (window.innerWidth <= 821) {
-        // Reset transform on mobile
-        scrollContainer.style.transform = "none";
-        return;
-      }
+//       if (window.innerWidth <= 821) {
+//         // Reset transform on mobile
+//         scrollContainer.style.transform = "none";
+//         return;
+//       }
 
-      // Check if the section is in view
-      var x =
-        document.getElementById("heroSection").offsetHeight +
-        document.getElementById("Solution").offsetHeight -
-        document.getElementById("header").offsetHeight * 2;
-      if (window.scrollY >= x && window.scrollY <= sectionTop + sectionHeight) {
-        // Calculate the scroll progress within the section (from 0 to 1)
-        const scrollPercent = (window.scrollY - x) / (sectionHeight + viewportHeight);
+//       // Check if the section is in view
+//       var x =
+//         document.getElementById("heroSection").offsetHeight +
+//         document.getElementById("Solution").offsetHeight -
+//         document.getElementById("header").offsetHeight * 2;
+//       if (window.scrollY >= x && window.scrollY <= sectionTop + sectionHeight) {
+//         // Calculate the scroll progress within the section (from 0 to 1)
+//         const scrollPercent = (window.scrollY - x) / (sectionHeight + viewportHeight);
 
-        // Apply horizontal scroll based on percentage
-        const scrollX = maxScrollX * scrollPercent;
-        scrollContainer.style.transform = `translateX(${-scrollX}px)`;
-      }
-    });
-  }
+//         // Apply horizontal scroll based on percentage
+//         const scrollX = maxScrollX * scrollPercent;
+//         scrollContainer.style.transform = `translateX(${-scrollX}px)`;
+//       }
+//     });
+//   }
 
-  // Initialize the function with your specific section selector
-  enableHorizontalScrollOnVerticalScroll("#Key-feature");
-});
+//   // Initialize the function with your specific section selector
+//   enableHorizontalScrollOnVerticalScroll("#Key-feature");
+// });
 
 function toggleAccordion(index) {
   const accordionItems = document.querySelectorAll(".accordion-item");
