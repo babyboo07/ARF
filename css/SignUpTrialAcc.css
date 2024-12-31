@@ -98,8 +98,8 @@
 }
 
 .modal-icon img {
-  width: 48px;
-  height: 48px;
+  width: 64px;
+  height: 64px;
   margin-bottom: 1rem;
 }
 
@@ -138,6 +138,10 @@
   font-size: 1.5rem;
   cursor: pointer;
   color: var(--primary--brand);
+}
+
+.button_text{
+  background: none;
 }
 
 @media only screen and (max-width: 768px) {

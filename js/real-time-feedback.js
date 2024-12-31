@@ -61,3 +61,29 @@ function toggleAccordion(index) {
     }
   });
 }
+
+$(document).ready(function () {
+  const cardWrapper = document.querySelector(".card-wrapper");
+  const prevButton = document.getElementById("prev");
+  const nextButton = document.getElementById("next");
+  let scrollAmount = 0;
+  
+  const scrollCards = (direction) => {
+    const containerWidth = document.querySelector(".list-5").offsetWidth;
+    const scrollStep = containerWidth - 50; // Adjust step for better alignment
+  
+    if (direction === "next") {
+      scrollAmount -= scrollStep;
+      if (Math.abs(scrollAmount) >= cardWrapper.offsetWidth - containerWidth) {
+        scrollAmount = -(cardWrapper.offsetWidth - containerWidth);
+      }
+    } else if (direction === "prev") {
+      scrollAmount += scrollStep;
+      if (scrollAmount > 0) scrollAmount = 0;
+    }
+    cardWrapper.style.transform = `translateX(${scrollAmount}px)`;
+  };
+  
+  prevButton.addEventListener("click", () => scrollCards("prev"));
+  nextButton.addEventListener("click", () => scrollCards("next"));
+})
