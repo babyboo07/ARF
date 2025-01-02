@@ -1229,6 +1229,16 @@
       lightgray 50% / cover no-repeat;
 }
 
+.card._1:hover,
+.card._2:hover,
+.card._3:hover,
+.card._4:hover,
+.card._5:hover,
+.card._6:hover
+{
+  background: linear-gradient(0deg, #151515 0%, #151515 100%), lightgray 50% / cover no-repeat;
+}
+
 .container_card_keyfeature {
   display: flex;
   height: 388px;
@@ -6267,7 +6277,7 @@ input:checked + .slider:before {
   .flex-block-5{
     gap: 8px
   }
-  
+
   .div_card_keyfeature {
     display: flex;
     padding: 24px;
@@ -6280,6 +6290,16 @@ input:checked + .slider:before {
 
   .feature-title {
     font-size: 18px;
+  }
+
+  .card._1,
+  .card._2,
+  .card._3,
+  .card._4,
+  .card._5,
+  .card._6:hover
+  {
+    background: linear-gradient(0deg, #151515 0%, #151515 100%), lightgray 50% / cover no-repeat;
   }
 }
 
