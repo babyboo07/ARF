@@ -6386,6 +6386,10 @@ input:checked + .slider:before {
     font-size: 18px;
   }
 
+  .feature-description{
+    font-size: 16px;
+  }
+
   .card-footer{
     display: flex;
     padding: 24px;
@@ -6403,6 +6407,12 @@ input:checked + .slider:before {
     gap: 4px;
     border-radius: 999px;
     background: var(--background, #FFF);
+  }
+
+  .btn-show-content{
+    background-image: url("../images/icon-wrapper.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 

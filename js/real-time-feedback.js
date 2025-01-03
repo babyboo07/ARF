@@ -87,3 +87,12 @@ $(document).ready(function () {
   prevButton.addEventListener("click", () => scrollCards("prev"));
   nextButton.addEventListener("click", () => scrollCards("next"));
 })
+
+function toggleDetails(button) {
+  const cardContent = document.querySelector(".hidden-content");
+  if (cardContent.style.display === "none" || cardContent.style.display === "") {
+    cardContent.style.display = "block";
+  } else {
+    cardContent.style.display = "none";
+  }
+}
