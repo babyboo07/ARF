@@ -113,9 +113,9 @@
               name="language"
               data-name="Language"
             >
-              <option value="">VietNam</option>
-              <option value="First">Japan</option>
-              <option value="Second">English</option>
+              <option value="VietNam">Tiếng Việt</option>
+              <option value="Japan">Japan</option>
+              <option value="English">English</option>
             </select>
           </div>
         </div>
@@ -406,7 +406,7 @@
                   </div>
                 </div>
                 <div class="card-footer">
-                  <button onclick="toggleDetails(this)" class="btn-show-content">
+                  <button onclick="toggleDetails('_1')" class="btn-show-content">
                   </button>
                 </div>
               </div>
@@ -436,8 +436,8 @@
                   </div>
                 </div>
                 <div class="card-footer">
-                  <div class="btn-show-content">
-                  </div>
+                  <button onclick="toggleDetails('_2')" class="btn-show-content">
+                  </button>
                 </div>
               </div>
             </div>
@@ -458,8 +458,8 @@
                   </div>
                 </div>
                 <div class="card-footer">
-                  <div class="btn-show-content">
-                  </div>
+                  <button onclick="toggleDetails('_3')" class="btn-show-content">
+                  </button>
                 </div>
               </div>
             </div>
@@ -485,8 +485,8 @@
                 </div>
               </div>
               <div class="card-footer">
-                <div class="btn-show-content">
-                </div>
+                <button onclick="toggleDetails('_4')" class="btn-show-content">
+                </button>
               </div>
             </div>
             <div class="card _5">
@@ -510,8 +510,8 @@
                   </div>
                 </div>
                 <div class="card-footer">
-                  <div class="btn-show-content">
-                  </div>
+                  <button onclick="toggleDetails('_5')" class="btn-show-content">
+                  </button>
                 </div>
               </div>
             </div>
@@ -538,8 +538,8 @@
                   </div>
                 </div>
                 <div class="card-footer">
-                  <div class="btn-show-content">
-                  </div>
+                  <button onclick="toggleDetails('_6')" class="btn-show-content">
+                  </button>
                 </div>
               </div>
             </div>
@@ -578,8 +578,6 @@
             <img
               src="images/Icon.png"
               loading="lazy"
-              width="101"
-              height="100"
               alt=""
               class="vectors-wrapper-12"
             />
@@ -597,8 +595,6 @@
             <img
               src="images/Icon-1.png"
               loading="lazy"
-              width="101"
-              height="100"
               alt=""
               class="vectors-wrapper-12"
             />
@@ -616,8 +612,6 @@
             <img
               src="images/Icon-2.png"
               loading="lazy"
-              width="101"
-              height="100"
               alt=""
               class="vectors-wrapper-12"
             />
@@ -635,8 +629,6 @@
             <img
               src="images/Icon-3.png"
               loading="lazy"
-              width="101"
-              height="100"
               alt=""
               class="vectors-wrapper-12"
             />
@@ -797,7 +789,7 @@
                   </div>
                   <div class="heading-5">
                     <div class="text-14">
-                      Đạt hiệu quả vượt trội với ngân sách tối ưu chỉ từ <br />
+                      Đạt hiệu quả vượt trội với ngân sách tối ưu chỉ từ
                       <strong>3 triệu đồng/tháng.</strong>
                     </div>
                   </div>
@@ -1118,62 +1110,64 @@
     </section>
 
     <section id="Case-studies" class="case-studies">
-      <div class="w-layout-blockcontainer container-54 w-container">
-        <div class="w-layout-vflex headling-title">
-          <h1 class="heading-2 black">Case Studies</h1>
-          <h4 class="heading-4">
-            RTF - Chìa khóa thành công của doanh nghiệp của bạn
-          </h4>
-        </div>
-        <div class="w-layout-vflex flex-block-16">
-          <div class="container-56">
-            <div class="container-57">
-              <div class="container-58">
-                <div class="link-2">
-                  <div class="container-59">
-                    <img
-                      src="images/airport-terminal-1024x683-1.jpg.jpg.webp.png"
-                      loading="lazy"
-                      width="465"
-                      height="Auto"
-                      alt=""
-                      class="airport-terminal-1024x683-1-jpg-jpg-webp"
-                    />
+      <div class="w-layout-blockcontainer container-54  w-container">
+        <div class="container-case-studies">
+          <div class="w-layout-vflex headling-title">
+            <h1 class="heading-2 black">Case Studies</h1>
+            <h4 class="heading-4">
+              RTF - Chìa khóa thành công của doanh nghiệp của bạn
+            </h4>
+          </div>
+          <div class="w-layout-vflex flex-block-16">
+            <div class="container-56">
+              <div class="container-57">
+                <div class="container-58">
+                  <div class="link-2">
+                    <div class="container-59">
+                      <img
+                        src="images/airport-terminal-1024x683-1.jpg.jpg.webp.png"
+                        loading="lazy"
+                        width="465"
+                        height="Auto"
+                        alt=""
+                        class="airport-terminal-1024x683-1-jpg-jpg-webp"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="container-60">
-            <div class="container-61">
-              <div class="h3">
-                Quản lý tài sản hiệu quả với Phần mềm Realtime Feedbacks
-              </div>
-              <div class="container-58">
-                <div class="link-3">
-                  <div class="text-21">
-                    Trước đây, Công ty Outsource Aris gặp khó khăn trong việc
-                    theo dõi và bảo trì tài sản, dẫn đến chậm trễ và chi phí
-                    phát sinh. Giờ đây, với Phần mềm Realtime Feedbacks, nhân
-                    viên có thể cập nhật tình trạng tài sản ngay lập tức, giúp
-                    đội ngũ quản lý xử lý nhanh chóng và kịp thời.
-                  </div>
-                  <div class="text-result">
-                    <strong>Kết quả:</strong> Tối ưu quy trình bảo trì, giảm
-                    thiểu hư hỏng và tiết kiệm chi phí.
+            <div class="container-60">
+              <div class="container-61">
+                <div class="h3">
+                  Quản lý tài sản hiệu quả với Phần mềm Realtime Feedbacks
+                </div>
+                <div class="container-58">
+                  <div class="link-3">
+                    <div class="text-21">
+                      Trước đây, Công ty Outsource Aris gặp khó khăn trong việc
+                      theo dõi và bảo trì tài sản, dẫn đến chậm trễ và chi phí
+                      phát sinh. Giờ đây, với Phần mềm Realtime Feedbacks, nhân
+                      viên có thể cập nhật tình trạng tài sản ngay lập tức, giúp
+                      đội ngũ quản lý xử lý nhanh chóng và kịp thời.
+                    </div>
+                    <div class="text-result">
+                      <strong>Kết quả:</strong> Tối ưu quy trình bảo trì, giảm
+                      thiểu hư hỏng và tiết kiệm chi phí.
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card-case-studies">
-                <div class="solution-container">
-                  <div class="solution-text">
-                    Bắt đầu ngay hôm nay để nâng cao hiệu quả quản lý tài sản
-                    của bạn!
-                  </div>
-                  <div class="button primary">
-                    <a href="#" class="button_text primary"
-                      >Dùng thử miễn phí</a
-                    >
+                <div class="card-case-studies">
+                  <div class="solution-container">
+                    <div class="solution-text">
+                      Bắt đầu ngay hôm nay để nâng cao hiệu quả quản lý tài sản
+                      của bạn!
+                    </div>
+                    <div class="button primary">
+                      <a href="#" class="button_text primary"
+                        >Dùng thử miễn phí</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1637,76 +1631,8 @@
                   <div class="button noicon">
                     <a href="#" class="button_text">Liên hệ</a>
                   </div>
-                  <!-- <div class="list---starter-site-plan-key-features">
-                  <div class="item-9">
-                    <div class="strong-webflow-io-domain-2">
-                      Số lượng người dùng
-                    </div>
-                    <img width="16" height="16" alt="" src="images/infinity_ico_pricing_card.png" loading="lazy"
-                      class="vectors-wrapper-18" />
-                  </div>
-                  <div class="item-9">
-                    <div class="strong-webflow-io-domain-2">
-                      Số lượng đối tượng được feedback
-                    </div>
-                    <img width="16" height="16" alt="" src="images/infinity_ico_pricing_card.png" loading="lazy"
-                      class="vectors-wrapper-18" />
-                  </div>
-                  <div class="item-9">
-                    <div class="strong-webflow-io-domain-2">
-                      Lưu lượng sử dụng (GB/tháng)
-                    </div>
-                    <img width="16" height="16" alt="" src="images/infinity_ico_pricing_card.png" loading="lazy"
-                      class="vectors-wrapper-18" />
-                  </div>
-                  <div class="item-9">
-                    <div class="strong-webflow-io-domain-2">
-                      Feedback tối đa trong ngày
-                    </div>
-                    <img width="16" height="16" alt="" src="images/infinity_ico_pricing_card.png" loading="lazy"
-                      class="vectors-wrapper-18" />
-                  </div>
-                  <div class="item-9">
-                    <div class="strong-webflow-io-domain-2">
-                      Dung lượng lưu trữ (GB)
-                    </div>
-                    <img width="16" height="16" alt="" src="images/infinity_ico_pricing_card.png" loading="lazy"
-                      class="vectors-wrapper-18" />
-                  </div>
-                  <div class="item-9">
-                    <div class="strong-webflow-io-domain-2">
-                      Thống kê báo cáo nâng cao
-                    </div>
-                    <img width="20" height="20" alt="" src="images/Checkmark.svg" loading="lazy"
-                      class="vectors-wrapper-19" />
-                  </div>
-                  <div class="item-9">
-                    <div class="strong-webflow-io-domain-2">
-                      Tích hợp với các hệ thống khác
-                    </div>
-                    <img width="20" height="20" alt="" src="images/Checkmark.svg" loading="lazy"
-                      class="vectors-wrapper-19" />
-                  </div>
-                  <div class="item-9">
-                    <div class="strong-webflow-io-domain-2">
-                      Hỗ trợ ưu tiên (Operation)
-                    </div>
-                    <img width="20" height="20" alt="" src="images/Checkmark.svg" loading="lazy"
-                      class="vectors-wrapper-19" />
-                  </div>
-                  <div class="item-9">
-                    <div class="strong-webflow-io-domain-2">
-                      Gửi báo cáo tự động qua email
-                    </div>
-                    <img width="20" height="20" alt="" src="images/Checkmark.svg" loading="lazy"
-                      class="vectors-wrapper-19" />
-                  </div>
-                  <div class="item-9">
-                    <div class="strong-webflow-io-domain-2">Đa ngôn ngữ</div>
-                    <img width="20" height="20" alt="" src="images/Checkmark.svg" loading="lazy"
-                      class="vectors-wrapper-19" />
-                  </div>
-                </div> -->
+                  <div class="list---starter-site-plan-key-features">
+                </div>
                 </div>
               </div>
             </div>
@@ -1895,7 +1821,7 @@
         </div>
         <div class="w-layout-vflex flex-block-9">
           <div class="w-layout-vflex flex-block-7">
-            <div>
+            <div class="heading-contact-us">
               <h1 class="heading-8">Liên hệ tư vấn</h1>
               <h3 class="heading-9">ngay hôm nay!</h3>
             </div>

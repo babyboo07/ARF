@@ -88,11 +88,21 @@ $(document).ready(function () {
   nextButton.addEventListener("click", () => scrollCards("next"));
 })
 
-function toggleDetails(button) {
-  const cardContent = document.querySelector(".hidden-content");
-  if (cardContent.style.display === "none" || cardContent.style.display === "") {
-    cardContent.style.display = "block";
-  } else {
-    cardContent.style.display = "none";
-  }
+function toggleDetails(id) {
+  const card = document.querySelector(`.card.${id}`);
+  const cardContent = card.querySelector(".hidden-content");
+  const cardSubtitle = card.querySelector(".feature-description.without-hover");
+  const btnShowDetails = card.querySelector(".btn-show-content");
+
+  const isHidden = cardContent.style.display === "none" || cardContent.style.display === "";
+
+  card.style.background = isHidden 
+    ? "linear-gradient(0deg, #151515 0%, #151515 100%) lightgray 50% / cover no-repeat" 
+    : "";
+
+  cardContent.style.display = isHidden ? "flex" : "none";
+  cardSubtitle.style.display = isHidden ? "none" : "block";
+  btnShowDetails.style.backgroundImage = isHidden 
+    ? "url(../images/x-wrapper.svg)" 
+    : "url(../images/icon-wrapper.svg)";
 }
