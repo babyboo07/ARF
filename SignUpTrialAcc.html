@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Oct 23 2024 10:55:23 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="66c8212a336539dcc154e217" data-wf-site="66c8212a336539dcc154e1ff">
 
 <head>
@@ -28,24 +27,28 @@
 <body class="body">
   <section class="header">
     <div class="w-layout-blockcontainer overlay w-container">
-      <div class="w-layout-blockcontainer container w-container">
+      <div class="container w-layout-blockcontainer w-container">
         <div class="header-left">
-          <h5 class="heading-10">Contact Us:</h5>
+          <h5 class="heading-10">Liên hệ:</h5>
           <div class="w-layout-hflex flex-block-12">
-            <div class="w-layout-hflex flex-block-11"><img src="images/envelope-fill.svg" loading="lazy" width="Auto"
-                alt="">
-              <div class="text-block-4"><a to="">arf@aris-vn.com.vn</a></div>
+            <div class="w-layout-hflex flex-block-11">
+              <img src="images/envelope-fill.svg" loading="lazy" width="Auto" alt="" />
+              <div class="text-block-4">
+                <a href="mailto:contact@ansol.vn">contact@ansol.vn</a>
+              </div>
             </div>
-            <div class="w-layout-hflex flex-block-11"><img src="images/telephone-fill.svg" loading="lazy" alt="">
-              <div class="text-block-4">(+84) 28-38424483</div>
+            <div class="w-layout-hflex flex-block-11">
+              <img src="images/telephone-fill.svg" loading="lazy" alt="" />
+              <div class="text-block-4">
+                <a href="tel:+8428-38424483">(+84) 28-38424483</a>
+              </div>
             </div>
           </div>
         </div>
         <div class="header-right">
           <select class="btn-language" id="language" name="language" data-name="Language">
-            <option value="">VietNam</option>
-            <option value="First">Japan</option>
-            <option value="Second">English</option>
+            <option value="vi">Tiếng Việt</option>
+            <option value="en">English</option>
           </select>
         </div>
       </div>
@@ -53,7 +56,8 @@
     <div data-animation="over-right" class="navbar w-nav" data-easing2="ease" data-easing="ease" data-collapse="medium"
       role="banner" data-duration="400" id="01" data-doc-height="1">
       <div class="container-101 w-container">
-        <a href="/index.html" class="brand-2 w-nav-brand"><img src="images/logo.png" loading="lazy" alt=""></a>
+        <a href="/index.html" class="brand-2 w-nav-brand"><img class="nav-logo" src="images/logo.png" loading="lazy"
+            alt=""></a>
         <nav role="navigation" class="nav-menu w-nav-menu">
           <!-- <a href="#heroSection" class="nav-link-2 w-nav-link">Trang chủ</a>
           <a href="#Solution" class="nav-link-2 w-nav-link">Giải pháp</a>
@@ -63,12 +67,13 @@
           <a href="#Pricing" class="nav-link-2 w-nav-link">Các gói</a>
           <a href="/FAQ.html" class="nav-link-2 w--curren w-nav-link">FAQ</a> -->
         </nav>
-        <nav class="menu-button w-nav-button">
+        <!-- <nav class="menu-button w-nav-button">
           <div class="icon w-icon-nav-menu"></div>
-        </nav>
+        </nav> -->
       </div>
     </div>
   </section>
+
   <section id="SignUpTrialAcc" class="sign-up">
     <div class="w-layout-blockcontainer container-19 w-container">
       <div class="w-layout-vflex headling-title">
@@ -92,8 +97,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="container-80"></div><input class="input-fullWidth w-input" autofocus="true"
-                    maxlength="256" name="name-2" data-name="Name 2" placeholder="Tên liên hệ" type="text" id="name-2">
+                  <input class="input-fullWidth w-input" autofocus="true" maxlength="256" name="name-2"
+                    data-name="Name 2" placeholder="Tên liên hệ" type="text" id="name-2">
                 </div>
               </div>
               <div class="input-label">
@@ -102,19 +107,18 @@
                     <div class="text-42"><span class="t-n-0">Số điện thoại</span><span class="t-n-2">(*)</span>
                     </div>
                   </div>
-                  <div class="container-80"></div><input class="input-fullWidth w-input" autofocus="true"
-                    maxlength="256" name="phone-number" data-name="Phone Number" placeholder="Số điện thoại" type="tel"
-                    id="phone-number">
+                  <input class="input-fullWidth w-input" autofocus="true" maxlength="256" name="phone-number"
+                    data-name="Phone Number" placeholder="Số điện thoại" type="tel" id="phone-number">
                 </div>
               </div>
               <div class="input-label">
                 <div class="container-78">
                   <div class="label">
-                    <div class="text-42"><span class="t-n-0">Email</span></div>
+                    <div class="text-42"><span class="t-n-0">Email</span><span class="t-n-2">(*)</span>
+                    </div>
                   </div>
-                  <div class="container-80"></div><input class="input-fullWidth w-input" autofocus="true"
-                    maxlength="256" name="email" data-name="Email" placeholder="example@gmail.com" type="email"
-                    id="email">
+                  <input class="input-fullWidth w-input" autofocus="true" maxlength="256" name="email" data-name="Email"
+                    placeholder="example@gmail.com" type="email" id="email">
                 </div>
               </div>
               <div class="input-label">
@@ -123,12 +127,11 @@
                     <div class="text-42"><span class="t-n-0">Lĩnh vực kinh doanh</span><span class="t-n-2">(*)</span>
                     </div>
                   </div>
-                  <div class="container-80"><select id="business-field" name="field-1" data-name="Field 1"
-                      class="input-fullWidth w-select">
-                      <option value="">Bản lẻ</option>
-                      <option value="1">Bản lẻ</option>
-                      <option value="2">Bản lẻ</option>
-                    </select></div>
+                  <select id="business-field" name="field-1" data-name="Field 1" class="input-fullWidth w-select">
+                    <option value="">Bản lẻ</option>
+                    <option value="1">Bản lẻ</option>
+                    <option value="2">Bản lẻ</option>
+                  </select>
                 </div>
                 <div class="input-label">
                   <div class="container-78">
@@ -136,28 +139,26 @@
                       <div class="text-42"><span class="t-n-0">Tên doanh nghiệp</span><span class="t-n-2">(*)</span>
                       </div>
                     </div>
-                    <div class="container-80"></div><input class="input-fullWidth w-input" autofocus="true"
-                      maxlength="256" name="Company-name" data-name="Company Name" placeholder="Tên doanh nghiệp"
-                      type="text" id="company-name">
+                    <input class="input-fullWidth w-input" autofocus="true" maxlength="256" name="Company-name"
+                      data-name="Company Name" placeholder="Tên doanh nghiệp" type="text" id="company-name">
                   </div>
                 </div>
                 <div class="input-label">
                   <div class="container-78">
                     <div class="label">
-                      <div class="text-42"><span class="t-n-0">Mã số thuế</span><span class="t-n-2">(*)</span></div>
+                      <div class="text-42"><span class="t-n-0">Mã số thuế</span></div>
                     </div>
-                    <div class="container-80"></div><input class="input-fullWidth w-input" autofocus="true"
-                      maxlength="256" name="tax-code" data-name="Tax code" placeholder="Mã số thuế" type="text"
-                      id="tax-code">
+                    <input class="input-fullWidth w-input" autofocus="true" maxlength="256" name="tax-code"
+                      data-name="Tax code" placeholder="Mã số thuế" type="text" id="tax-code">
                   </div>
                 </div>
                 <div class="input-label">
                   <div class="container-78">
                     <div class="label">
-                      <div class="text-42"><span class="t-n-0">Địa chỉ</span><span class="t-n-2">(*)</span></div>
+                      <div class="text-42"><span class="t-n-0">Địa chỉ</span></div>
                     </div>
-                    <div class="container-80"></div><input class="input-fullWidth w-input" autofocus="true"
-                      maxlength="256" name="address" data-name="Address" placeholder="Địa chỉ" type="text" id="address">
+                    <input class="input-fullWidth w-input" autofocus="true" maxlength="256" name="address"
+                      data-name="Address" placeholder="Địa chỉ" type="text" id="address">
                   </div>
                 </div>
                 <div class="input-label">
@@ -166,12 +167,11 @@
                       <div class="text-42"><span class="t-n-0">Chức danh</span><span class="t-n-2">(*)</span>
                       </div>
                     </div>
-                    <div class="container-80"><select id="field-1" name="field-1" data-name="Field 1"
-                        class="input-fullWidth w-select">
-                        <option value="">CSO</option>
-                        <option value="First">CEO</option>
-                        <option value="Second">COO</option>
-                      </select></div>
+                    <select id="field-1" name="field-1" data-name="Field 1" class="input-fullWidth w-select">
+                      <option value="">CSO</option>
+                      <option value="First">CEO</option>
+                      <option value="Second">COO</option>
+                    </select>
                   </div>
                 </div>
                 <div class="input-label">
@@ -180,13 +180,12 @@
                       <div class="text-42"><span class="t-n-0">Quy mô</span><span class="t-n-2">(*)</span>
                       </div>
                     </div>
-                    <div class="container-80"><select id="field-2" name="field-2" data-name="Field 2"
-                        class="input-fullWidth w-select">
-                        <option value="">0-50</option>
-                        <option value="First">10</option>
-                        <option value="Second">20</option>
-                        <option value="Third">50</option>
-                      </select></div>
+                    <select id="field-2" name="field-2" data-name="Field 2" class="input-fullWidth w-select">
+                      <option value="">0-50</option>
+                      <option value="First">10</option>
+                      <option value="Second">20</option>
+                      <option value="Third">50</option>
+                    </select>
                   </div>
                 </div>
                 <div class="w-layout-hflex form_flexbox flex-block-19">
@@ -195,23 +194,18 @@
                   </div>
                 </div>
                 <div class="w-layout-hflex flex-block-8">
-                  <div class="button noicon w-inline-block">
-                    <button type="button" id="btnRegister" style="z-index: 1000;" class="button_text">Đăng ký</button>
-                  </div>
+                  <button type="submit" class="button" id="btnRegister" style="width: 100%;">
+                    <span class="button_text">Đăng ký</span>
+                  </button>
                 </div>
             </form>
           </div>
-          <div class="success-message w-form-done">
-            <div>Thank you! Your submission has been received!</div>
-          </div>
-          <div class="w-form-fail">
-            <div>Oops! Something went wrong while submitting the form.</div>
-          </div>
+          <span id="responseMessage"></span>
         </div>
       </div>
     </div>
-    </div>
   </section>
+
   <div class="modal">
     <div class="modal-content">
       <span class="close-button">&times;</span>
@@ -220,21 +214,19 @@
       </div>
       <h2>Đăng ký thành công!</h2>
       <p>Cảm ơn bạn đã liên hệ, đội ngũ Real-time Feedback sẽ liên hệ đến bạn trong thời gian sớm nhất</p>
-      <div data-w-id="7ffa706f-97f2-3f1a-5afa-940c750e271e" class="">
-        <button class="home-button" style="z-index: 1000;"><a href="/index.html">Trở lại trang chủ</a></button>
-        <div
-          style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(1deg, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(1deg, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(1deg, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(1deg, 0);filter: blur(1px)"
-          class="hover-circle"></div>
+      <div class="p-x">
+        <button class="home-button"><a href="/index.html">Trở lại trang chủ</a></button>
       </div>
       <p class="auto-close">Hệ thống sẽ tự động đóng trang trong <span id="countdown">15</span>s</p>
     </div>
   </div>
+
   <section class="footer">
     <div class="footer_container">
       <div class="footer_div">
         <div class="footer_logo">
           <div class="container-86">
-            <img src="images/logo-white.png" loading="lazy" width="Auto" height="Auto" alt=""
+            <img class="nav-logo" src="images/logo-white.png" loading="lazy" width="Auto" height="Auto" alt=""
               class="vectors-wrapper-24" />
           </div>
           <div class="container-87">
@@ -246,55 +238,52 @@
             <div class="list-8">
               <div class="item-10">
                 <div class="address">
-                  Waseco Building, 10 Pho Quang Str., Ward 2, Tan Binh Dist.,
-                  Ho Chi Minh City, Vietnam <br /><strong>Email:</strong> contact@aris-vn.com
-                  <br /><strong>Phone</strong>: +84-28-38424483 <br /><strong>Fax:</strong> +84-28-38424473
+                  Tòa nhà Waseco, 10 Phổ Quang, Phường 2, Quận Tân Bình,<br />
+                  Thành Phố Hồ Chí Minh, Việt Nam
+                </div>
+                <div class="white">
+                  <br /><strong class="white">Email:</strong> <a class="white"
+                    href="mailto:contact@ansol.vn">contact@ansol.vn</a>
+                  <br /><strong class="white">Điện thoại:</strong> +84-28-38424483
+                  <br /><strong class="white">Fax:</strong> +84-28-38424473
                 </div>
               </div>
-              <div class="item-10">
-                <div class="address">
-                  Detech Tower II Building, 107 Nguyen Phong Sac Str., Cau
-                  Giay Dist., Hanoi, Vietnam.<br />
-                  <strong>Email:</strong> contact@aris-vn.com<br />
-                  <strong>Phone:</strong> +84-28-38424483<br />
-                  <strong>Fax:</strong> +84-28-38424473
-                </div>
-              </div>
+
             </div>
           </div>
           <div class="footer_divcontent">
             <div class="item-11">
-              <div class="text-45">Giải pháp</div>
+              <div class="text-45">Site Map</div>
             </div>
             <div class="list-10">
               <div class="item-11">
                 <div class="link-4">
-                  <div class="text-46">Phản hổi thông minh</div>
+                  <a href="#Solution" class="text-46">Giải pháp</a>
                 </div>
               </div>
               <div class="item-11">
                 <div class="link-4">
-                  <div class="text-46">Tăng cường hiệu suất</div>
+                  <a href="#Key-feature" class="text-46">Tính năng</a>
                 </div>
               </div>
               <div class="item-11">
                 <div class="link-4">
-                  <div class="text-46">Linh hoạt và đa dạng</div>
+                  <a href="#Benefit" class="text-46">Lợi ích</a>
                 </div>
               </div>
               <div class="item-11">
                 <div class="link-4">
-                  <div class="text-46">Minh bạch và an toàn</div>
+                  <a href="#Case-studies" class="text-46">Case Studies</a>
                 </div>
               </div>
               <div class="item-11">
                 <div class="link-4">
-                  <div class="text-46">Giao diện thân thiện</div>
+                  <a href="#Pricing" class="text-46">Phí sử dụng</a>
                 </div>
               </div>
               <div class="item-11">
                 <div class="link-4">
-                  <div class="text-46">Kho giao diện tùy biến</div>
+                  <a href="/FAQ.html" class="text-46">FAQ</a>
                 </div>
               </div>
             </div>
@@ -303,22 +292,36 @@
       </div>
     </div>
   </section>
+
   <section class="section-5">
     <div class="w-layout-blockcontainer container-102 w-container">
       <div id="w-node-f040a385-26b7-ed1f-86f2-a5f4c5cb0b4f-c154e217" class="div-block-6">
-        <div id="w-node-_28b8502a-cb71-2eb7-dffa-a4d20a8227a3-c154e217" class="text-block-6">Điều khoản sử dụng</div>
-        <div id="w-node-_189af608-d346-83ba-aebd-3653a30b69c0-c154e217" class="text-block-6">Chính sách bảo mật</div>
-        <div id="w-node-_2b4c778e-0ee0-3a2a-107f-421e1645fe59-c154e217" class="text-block-6">©2024 ARIS-VN</div>
+        <div class="terms-of-use">
+          <div id="w-node-_28b8502a-cb71-2eb7-dffa-a4d20a8227a3-c154e217" class="text-block-6 text-underline">
+            Điều khoản sử dụng
+          </div>
+          <div id="w-node-_189af608-d346-83ba-aebd-3653a30b69c0-c154e217" class="text-block-6 text-underline">
+            Chính sách bảo mật
+          </div>
+        </div>
+        <div id="w-node-_2b4c778e-0ee0-3a2a-107f-421e1645fe59-c154e217" class="text-block-6">
+          ©2024 ANSOL JSC
+        </div>
       </div>
       <div class="div-block-7">
-        <div id="w-node-c7a504f1-b9bc-9539-96af-1823bc85a908-c154e217" class="text-block-6">Liên hệ với chúng tôi:</div>
+        <div id="w-node-c7a504f1-b9bc-9539-96af-1823bc85a908-c154e217" class="text-block-6">
+          Liên hệ với chúng tôi:
+        </div>
         <div class="w-layout-hflex">
-          <div class="div-block-8"><img src="images/linkedin.png.webp.png" loading="lazy" width="24" height="24" alt="">
+          <div class="div-block-8">
+            <img src="images/LI-In-Bug.png" loading="lazy" width="24" height="24" alt="" />
           </div>
-          <div class="div-block-8"><img src="images/facebook.png.png" loading="lazy" width="24" height="24" alt="">
+          <div class="div-block-8">
+            <img src="images/Facebook_Logo_Primary.png" loading="lazy" width="24" height="24" alt="" />
           </div>
-          <div class="div-block-8"><img src="images/free-youtube-logo-icon-2431-thumb-e1695786846371.png.png"
-              loading="lazy" width="24" height="24" alt=""></div>
+          <div class="div-block-8">
+            <img src="images/youtube_social_icon_red.png" loading="lazy" width="24" height="24" alt="" />
+          </div>
         </div>
       </div>
     </div>

@@ -316,18 +316,19 @@ button,
   margin: 0 0 15px;
 }
 .w-form-done {
-  display: none;
-  border: 2px solid #dddddd;
-  padding: 20px;
+  display: block;
+  border: 2px solid rgba(0, 190, 0, 0.10);
+  padding: 10px;
   text-align: center;
-  background-color: #dddddd;
+  background-color: rgba(0, 190, 0, 0.10);
   border-radius: 25px;
 }
 .w-form-fail {
-  display: none;
+  display:  block;
   border: 2px solid #ffdede;
   margin-top: 10px;
   padding: 10px;
+  text-align: center;
   background-color: #ffdede;
   border-radius: 25px;
 }
@@ -1583,7 +1584,7 @@ textarea.w-select {
 .w-nav {
   position: relative;
   background: #dddddd;
-  z-index: 1000;
+  z-index: 9999;
 }
 .w-nav:before,
 .w-nav:after {
@@ -1609,7 +1610,7 @@ textarea.w-select {
   vertical-align: top;
   text-decoration: none;
   color: #222222;
-  padding: 20px;
+  /* padding: 19px; */
   text-align: left;
   margin-left: auto;
   margin-right: auto;
@@ -1620,6 +1621,7 @@ textarea.w-select {
 .w-nav-menu {
   position: relative;
   float: right;
+  -webkit-perspective: 1000;
 }
 [data-nav-menu-open] {
   display: block !important;
@@ -1630,7 +1632,7 @@ textarea.w-select {
   background: #c8c8c8;
   text-align: center;
   overflow: visible;
-  min-width: 200px;
+  min-width: 375px;
 }
 .w--nav-link-open {
   display: block;
@@ -1663,7 +1665,7 @@ textarea.w-select {
 .w-nav[data-animation="over-right"] .w-nav-overlay,
 .w-nav[data-animation="over-right"] [data-nav-menu-open] {
   left: auto;
-  z-index: 1;
+  z-index: 9999;
   top: 0;
 }
 .w-nav-button {
